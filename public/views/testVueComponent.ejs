@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Test Vue Component</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.3/vue.js"></script>
+    <link rel="stylesheet" href="/css/test.css">
+</head>
+
+<body>
+    <div id="componentTest">
+        <custom-header></custom-header>
+        <custom-aside></custom-aside>
+        <custom-main></custom-main>
+    </div>
+    <div id="app">
+        <custom-header></custom-header>
+        <custom-aside></custom-aside>
+        <custom-main></custom-main>
+    </div>
+    <div id="x_template">
+        <custom-header></custom-header>
+        <custom-main></custom-main>
+        <custom-aside></custom-aside>
+    </div>
+    <div id="example">
+      <example></example>
+    </div>
+</body>
+<% include template.ejs %>
+<script src="/js/component.js"></script>
+<script src="/js/extend.js"></script>
+<script src="/js/x_template.js"></script>
+
+
+</html>
